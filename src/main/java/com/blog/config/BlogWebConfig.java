@@ -102,7 +102,7 @@ public class BlogWebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         //配置主页
-        registry.addViewController("/").setViewName("forward:/htmls/index.html");
+        registry.addViewController("/").setViewName("forward:/index.html");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
         super.addViewControllers(registry);
     }
